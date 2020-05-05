@@ -1,8 +1,11 @@
 #!/bin/sh
 
-
 case $1 in
-	help | h | --help | -h)
+	help | --help )
+		# self documenting script. BOOM!
+		cat $0
+		;;
+	h | -h)
 		echo 'arguments n[uke], l[og], b[ackground], f[ollow], r[ebuild]'
 		;;
 	background | b)
